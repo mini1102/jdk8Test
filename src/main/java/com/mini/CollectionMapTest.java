@@ -16,8 +16,11 @@ public class CollectionMapTest {
         collect.forEach(System.out::println);*/
 
         List<Student> studentList = buildStudentList();
-        Map<Long, Student> collect = studentList.stream().collect(Collectors.toMap(a -> a.getId(), a -> a));
-        collect.forEach((k,v) -> System.out.println(k+":"+v));
+       /* Map<Long, Student> collect = studentList.stream().collect(Collectors.toMap(a -> a.getId(), a -> a));
+        collect.forEach((k,v) -> System.out.println(k+":"+v));*/
+
+        List<String> nameList = studentList.stream().map(Student::getName).distinct().collect(Collectors.toList());
+        nameList.forEach(item -> System.out.println(item));
     }
 
     private static Map<String, List<Student>> buildStudentMap() {
