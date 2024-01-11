@@ -1,4 +1,4 @@
-package com.mini;
+package com.mini.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

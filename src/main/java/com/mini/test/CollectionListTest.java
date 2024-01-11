@@ -1,10 +1,10 @@
-package com.mini;
+package com.mini.test;
 
 
-import javax.swing.*;
+import com.mini.dto.Student;
+
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class CollectionListTest {
 

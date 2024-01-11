@@ -1,4 +1,4 @@
-package com.mini;
+package com.mini.dto;
 
 public class Student extends BaseDTO {
     private Long id;

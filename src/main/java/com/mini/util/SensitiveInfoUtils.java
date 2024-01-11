@@ -1,4 +1,4 @@
-package com.mini;
+package com.mini.util;
 
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;

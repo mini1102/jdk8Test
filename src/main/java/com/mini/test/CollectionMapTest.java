@@ -1,4 +1,6 @@
-package com.mini;
+package com.mini.test;
+
+import com.mini.dto.Student;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +21,8 @@ public class CollectionMapTest {
        /* Map<Long, Student> collect = studentList.stream().collect(Collectors.toMap(a -> a.getId(), a -> a));
         collect.forEach((k,v) -> System.out.println(k+":"+v));*/
 
-        List<String> nameList = studentList.stream().map(Student::getName).distinct().collect(Collectors.toList());
+        //List<String> nameList = studentList.stream().map(Student::getName).distinct().collect(Collectors.toList());
+        List<String> nameList = studentList.stream().filter(a->a.getSex().equals("男")).map(Student::getName).distinct().collect(Collectors.toList());
         nameList.forEach(item -> System.out.println(item));
     }
 

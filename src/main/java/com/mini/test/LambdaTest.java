@@ -1,4 +1,4 @@
-package com.mini;
+package com.mini.test;
 
 public class LambdaTest {
     public static void main(String args[]) {

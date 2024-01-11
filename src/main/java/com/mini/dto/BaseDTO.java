@@ -1,4 +1,4 @@
-package com.mini;
+package com.mini.dto;
 
 import com.alibaba.fastjson.JSON;
 
